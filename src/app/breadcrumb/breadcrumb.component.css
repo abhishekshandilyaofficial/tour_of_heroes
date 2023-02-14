@@ -1,0 +1,7 @@
+.container-fluid{
+    background-color: #e4eef1;
+}
+li > a{
+    text-decoration: none;
+    color: #1f4c5a;
+}

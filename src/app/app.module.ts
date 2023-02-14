@@ -9,6 +9,9 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { TrailComponent } from './trail/trail.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 // import { InMemoryDataService } from './in-memory-data.service';
 
 @NgModule({
@@ -18,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     AppRoutingModule,
     HttpClientModule,
-
+    NgbModule,
+    NgbPaginationModule, NgbAlertModule,
 
   ],
   declarations: [
@@ -26,7 +30,9 @@ import { AppRoutingModule } from './app-routing.module';
     DashboardComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    TrailComponent,
+    BreadcrumbComponent
   ],
   bootstrap: [ AppComponent ]
 })
